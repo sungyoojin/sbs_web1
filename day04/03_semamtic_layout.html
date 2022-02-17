@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 요소 _ 레이아웃</title>
+
+
+    <style>
+         *{ box-sizing: border-box; margin: 0; padding: 0%;}
+            
+         body{
+             font-family: 'Do hyeon','sans-serif';
+
+         }
+         header{
+             background-color: lightgray;
+             height: 100px;
+
+         }
+
+         nav{
+             float: left;
+             width: 20%;
+             height: 300px;
+             background-color: #33999;
+             padding: 20px;
+         }
+    
+         article {
+             float: left;
+             padding: 20px;
+             width: 80%;
+             background-color: #f1f1f1;
+             height: 300px;
+
+         }
+         section: ::after{
+             caption
+
+         }
+     /* 반응형 적용 - 가로사이즈 600px 이하*/
+     @media screen and(max-width: 600px){
+         nav,
+         article{
+             width: 100px;
+             height: auto;
+         }
+         
+     }
+
+    </style>
+</head>
+<body>
+    <h1>semantic 태그를 이용한 레이아웃</h1>
+    <header>
+        <h2> header</h2>
+
+    </header>
+
+<section>
+    <nav>
+        <ul>
+            <!-- 한 줄 복사 : alt + shift + -->
+            <li><a href="#"> menu 003</a>  </li>
+            <li><a href="#"> menu 004</a>  </li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>sbs   아카데미</h1>
+        <P>
+            추억과 별 나의 계십니다. 많은 까닭이요, 이름자를 내 책상을 새워 어머니 버리었습니다.
+        </P>
+        <p>
+            추억과 별 나의 계십니다. 많은 까닭이요, 이름자를 내 책상을 새워 어머니 버리었습니다.
+        </p>
+    </article>
+</section>
+
+<footer>
+    <h2> footer</h2>
+</footer>
+</body>
+</html>
